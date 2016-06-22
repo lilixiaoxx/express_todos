@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+    <% for (var i=0; i< toDoList.length; i++){ %>
+       <h2><%= toDoList[i].morning %></h2>
+       <p><%= toDoList[i].afternoon %></p>
+       <p><%= toDoList[i].evening %></p>
+    <% } %>
+
+  </body>
+</html>
